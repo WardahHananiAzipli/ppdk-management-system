@@ -1,0 +1,248 @@
+.printable-form {
+  font-family: 'Arial', sans-serif;
+  font-size: 11pt;
+  padding: 0; /* tiada padding */
+  margin-top: 50px;
+  margin-left: 300px; 
+  width: 100%;
+  background: white;
+  color: black;
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+.form-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.form-code-left {
+  font-weight: bold;
+}
+
+.form-code-right {
+  background: orange;
+  padding: 4px 8px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.form-title {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.form-title h2,
+h4 {
+  font-size: 11pt;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.form-table,
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.form-table td,
+.program-table th,
+.program-table td {
+  border: 1px solid black;
+  padding: 10px 14px;
+  font-size: inherit;
+  vertical-align: top;
+}
+
+.form-table td:first-child {
+  width: 30%;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.form-table td:nth-child(2) {
+  width: 50%;
+  white-space: nowrap;
+  font-weight: bold; 
+}
+
+.form-table td:nth-child(3) {
+  width: 20%;
+  text-align: center;
+}
+
+.form-table td.photo {
+  border: none !important;
+  padding-left: 16px;
+  padding-right: 0;
+  width: 150px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.photo-img.icon-fallback {
+  width: 100px;
+  height: 130px;
+  border: 1px solid #444;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.photo-img {
+  width: 100px;
+  height: 130px;
+  object-fit: cover;
+  border: 1px solid #444;
+}
+
+h4 {
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.program-table {
+    white-space: nowrap;
+}
+
+.program-table th {
+  background-color: #f3f4f6;
+}
+
+.form-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.form-button .btn-print,
+.form-button .btn-edit,
+.form-button .btn-save,
+.form-button .btn-cancel,
+.form-button .btn-prev,
+.form-button .btn-next-1,
+.form-button .btn-next {
+  padding: 10px 20px;
+  background-color: #ea580c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 11pt;
+  text-decoration: none;
+  text-align: center;
+}
+
+.form-button .btn-print:hover,
+.form-button .btn-edit:hover,
+.form-button .btn-save:hover,
+.form-button .btn-cancel:hover,
+.form-button .btn-prev:hover,
+.form-button .btn-next-1:hover,
+.form-button .btn-next:hover {
+  background-color: #fde68a;
+  color: #7c2d12;
+}
+
+.form-button .btn-next-1 {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+button.btn-choose { 
+    padding: 10px 20px;
+    background-color: #ea580c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 11pt;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+}
+
+button.btn-choose:hover {
+    background-color: #fde68a;
+    color: #7c2d12;
+}
+
+label {
+    font-size: 11pt;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.alert-success {
+  margin: 20px auto;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #10b981;
+  border-radius: 6px;
+  font-size: 11pt;
+  text-align: center;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  main.printable-form,
+  main.printable-form * {
+    visibility: visible;
+  }
+
+  main.printable-form {
+    position: relative;
+    margin: 50px auto;
+    max-width: 800px;
+    width: 100%;
+    transform: none;
+    left: 0;
+  }
+
+  header, .sidebar, footer, .scroll-to-top {
+    display: none !important;
+  }
+
+ .form-code-right {
+    background-color: orange !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .form-table td {
+    border: none !important;
+  }
+
+  .program-table {
+    width: 100%;
+    table-layout: auto;
+  }
+
+  .form-button {
+    display: none;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+@page {
+    size: A4;
+    margin: 1in;
+  }
+}

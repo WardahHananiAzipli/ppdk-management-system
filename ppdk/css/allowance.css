@@ -1,0 +1,78 @@
+    .main-content {
+    margin-left: 230px;
+    padding: 20px;
+    max-width: 900px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      margin-top: 20px;
+      margin-left: 100px;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 5px 10px; 
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .container {
+      padding: 30px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .form-container {
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 100px;
+    }
+
+  .form-container form {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .form-container h2, 
+  .form-container h3 {
+    margin: 5px 0;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #ea580c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 11pt;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+  }
+
+  button:hover {
+    background-color: #fde68a;
+    color: #7c2d12;
+  }
+
+    select, input[type="number"] {
+    padding: 10px;
+    font-size: 11pt;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 5px;
+  }
+
+  label {
+    font-size: 11pt;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  form {
+    margin-bottom: 20px;
+  }

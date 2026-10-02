@@ -1,0 +1,238 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;      
+}
+
+/* Header */
+header {
+    background: #EA580C;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 80px;
+    margin-bottom: 1rem;
+    margin-left: 250px;
+}
+
+header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-left: 250px;
+}
+
+/* Button */
+nav {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+}
+
+nav a {
+    background-color: #ffffff;
+    color: #EA580C;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    border: 2px solid #EA580C;
+    transition: 0.3s ease;
+}
+
+nav a i {
+    font-size: 1.8em; 
+    color: #EA580C; 
+    margin-bottom: 5px; 
+}
+
+nav a span {
+    font-size: 0.8em; 
+}
+
+nav a:hover {
+    background-color: #fde68a;
+    color:#7c2d12;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #FFF7ED;
+    color: white;
+    height: 100vh;
+    padding: 25px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 2px solid white;
+}
+
+.sidebar-profile.icon-fallback {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f3f4f6;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.sidebar h1 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #EA580C;
+}
+
+/* Butang Sidebar */
+.sidebar a,
+.dropdown-btn {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: center;
+    background-color: #EA580C;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover */
+.sidebar a:hover,
+.dropdown-btn:hover,
+.dropdown-content a:hover {
+    background-color: #fde68a;
+    color: #7c2d12;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-content,
+.sub-dropdown-content {
+    display: none;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hover untuk paparkan dropdown */
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: flex;
+}
+
+/* Butang utama dan sub-dropdown */
+.dropdown-btn,
+.sub-dropdown-btn {
+    background-color: #EA580C;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.6rem 2rem;
+    margin: 0.3rem 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Link dalam submenu */
+.dropdown-content a,
+.sub-dropdown-content a {
+    background-color: #EA580C;
+    color: #FFFFFF;
+    padding: 0.6rem 2rem;
+    margin: 0.3rem 0;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Main */
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #EA580C;
+    color: white;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-left: 250px;
+}
+
+.social-icons {
+    margin-top: 10px;
+    margin-left: 250px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #facc15;
+}

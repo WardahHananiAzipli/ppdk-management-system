@@ -1,0 +1,72 @@
+    /* Filter Container */
+    .filter-container {
+        margin: 0 auto 30px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .filter-container label, 
+    .filter-container select {
+        font-size: 14px;
+    }
+
+    /* Chart Layout */
+    .chart-row,
+    .total-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        gap: 30px; 
+        margin-bottom: 30px;
+    }
+
+    .chart-container {
+        width: 48%;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #ccc;
+        margin-bottom: 20px;
+    }
+
+    /* Jadual */
+    .table-container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #ccc;
+    }
+
+    /* Tajuk */
+    h2 {
+        color: #333;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .main-container {
+        margin-left: 270px;     
+        max-width: 1000px;     
+        padding: 20px;
+        background: white;
+        color: black;
+        box-sizing: border-box;
+    }
+
+    .chart-title { 
+        margin: 0 0 10px 0; 
+        font-size: 16px; 
+        font-weight: 600; 
+        text-align: center; 
+        color: #333; 
+    }

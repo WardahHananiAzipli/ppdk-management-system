@@ -1,0 +1,193 @@
+.printable-form {
+  font-family: 'Arial', sans-serif;
+  font-size: 11pt;
+  margin: 50px 0 0 200px;     /* hanya margin atas */
+  padding: 0 40px;         /* kiri kanan sikit supaya tak terlalu rapat */
+  width: 100%;             /* ambil seluruh ruang */
+  max-width: 900px; 
+  background: white;
+  color: black;
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+.form-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.form-code-left {
+  font-weight: bold;
+}
+
+.form-code-right {
+  background: orange;
+  padding: 4px 8px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.form-title {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.form-title h2,
+h4 {
+  font-size: 11pt;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.form-table,
+.program-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.form-table td,
+.program-table th,
+.program-table td {
+  border: 1px solid black;
+  padding: 10px 14px;
+  font-size: inherit;
+  vertical-align: top;
+}
+
+.form-table td:first-child {
+  width: 30%;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.form-table td:nth-child(2) {
+  width: 50%;
+  white-space: nowrap;
+}
+
+.form-table td:nth-child(3) {
+  width: 20%;
+  text-align: center;
+}
+
+.form-table td.photo {
+  border: none !important;
+  padding-left: 16px;
+  padding-right: 0;
+  width: 150px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.photo-img.icon-fallback {
+  width: 100px;
+  height: 130px;
+  border: 1px solid #444;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #6b7280;
+}
+
+.photo-img {
+  width: 100px;
+  height: 130px;
+  object-fit: cover;
+  border: 1px solid #444;
+}
+
+h4 {
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.program-table th {
+  background-color: #f3f4f6;
+}
+
+.form-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.form-button .btn-print,
+.form-button .btn-edit {
+  padding: 10px 20px;
+  background-color: #ea580c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 11pt;
+  text-decoration: none;
+  text-align: center;
+}
+
+.form-button .btn-print:hover,
+.form-button .btn-edit:hover {
+  background-color: #fde68a;
+  color: #7c2d12;
+}
+
+.alert-success {
+  margin: 20px auto;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #10b981;
+  border-radius: 6px;
+  font-size: 11pt;
+  text-align: center;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  main.printable-form,
+  main.printable-form * {
+    visibility: visible;
+  }
+
+  main.printable-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0 !important; 
+    width: 100%;
+  }
+  
+  header, .sidebar, footer, .scroll-to-top {
+    display: none !important;
+  }
+
+ .form-code-right {
+    background-color: orange !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .form-table td {
+    border: none !important;
+  }
+
+  .form-button {
+    display: none;
+  }
+
+  @page {
+    size: A4;
+    margin: 1in;
+  }
+}
